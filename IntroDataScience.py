@@ -48,9 +48,6 @@ print(df.head(), "\n")
 print("Column info & data types:")
 print(df.info(), "\n")
 
-print("Basic stats for numeric columns:")
-print(df.describe(numeric_only=True), "\n")
-
 # Optional: Drop rows with critical missing values (keeps things simple for beginners)
 needed = ["Date", "Open Price", "Close Price"]
 df = df.dropna(subset=needed)
@@ -102,3 +99,4 @@ print(f"Average daily price change: ${avg_change:.2f}")
 print(f"Maximum closing price: ${max_close:.2f}")
 print(f"Minimum closing price: ${min_close:.2f}")
 print("\nInsight: The 5-day moving average smooths short-term wiggles to reveal trend direction.")
+
